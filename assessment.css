@@ -9,6 +9,7 @@ body{
 }
 
 button{
+    font-family: 'Times New Roman', Times, serif;
     padding: 3px 20px;
     background-color: #337ab7;
     border-style: none;
