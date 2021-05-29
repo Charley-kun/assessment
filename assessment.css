@@ -12,7 +12,8 @@ button{
     padding: 3px 20px;
     background-color: #337ab7;
     border-style: none;
-    
+    border-radius: 20px;
+    color: white;
 }
 input{
     height: 24px;
