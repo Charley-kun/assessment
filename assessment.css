@@ -25,9 +25,13 @@ input[type="search"],textarea{/*スマホだとタッチできるスペース広
     border: 1px solid #d1d1d1;/*枠の太さと色を指定*/
     border-radius: 5px;/*角を丸く削る*/
     box-shadow: none;/*ブラウザの標準だとついているのでいったん消した*/
-    box-sizing: border-box;
-    min-height: 1rem;
-    padding: 10px;
-    width: 100%;
+    box-sizing: border-box;/*余白を内側に指定する。テーブル(罫線のことか)からはみ出ないようにするため*/
+    min-height: 1rem;/*最低限の高さを決める*/
+    padding: 15px;/*inputテキストの内側に余白を持たせる*/
+    width: 100%;/*テーブルの横幅に合わせた余白をつくる*/
     font-size: 16px;
+  }
+
+  input[type="search"]::placeholder{
+    color: #aaa;
   }
