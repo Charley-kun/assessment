@@ -19,3 +19,15 @@ button{
 input{
     height: 24px;
 }
+
+input[type="search"],textarea{/*スマホだとタッチできるスペース広い方がいい。角も丸くする*/
+    background-color: white;
+    border: 1px solid #d1d1d1;/*枠の太さと色を指定*/
+    border-radius: 5px;/*角を丸く削る*/
+    box-shadow: none;/*ブラウザの標準だとついているのでいったん消した*/
+    box-sizing: border-box;
+    min-height: 1rem;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
