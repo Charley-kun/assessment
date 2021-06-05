@@ -46,6 +46,6 @@ input[type="search"],textarea{/*スマホだとタッチできるスペース広
     transition: 300ms;
   }
   input[type="search"]:focus::placeholder{  
-    transform: translateX(30px);
-    opacity: 0;
+    transform: translateX(30px);/*300ミリ秒かけてfocusがあたったら、右に動かしつつ透明にする*/
+    opacity: 0;/*透明にするよ、というCSS。*/
   }
