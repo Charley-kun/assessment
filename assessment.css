@@ -22,7 +22,7 @@ input{
 
 input[type="search"],textarea{/*スマホだとタッチできるスペース広い方がいい。角も丸くする*/
     background-color: white;
-    border: 1px solid #d1d1d1;/*枠の太さと色を指定*/
+    border: 3px solid #d1d1d1;/*枠の太さと色を指定*/
     border-radius: 5px;/*角を丸く削る*/
     box-shadow: none;/*ブラウザの標準だとついているのでいったん消した*/
     box-sizing: border-box;/*余白を内側に指定する。テーブル(罫線のことか)からはみ出ないようにするため*/
@@ -34,4 +34,18 @@ input[type="search"],textarea{/*スマホだとタッチできるスペース広
 
   input[type="search"]::placeholder{
     color: #aaa;
+  }
+
+  input[type="search"]:focus, /*テキストを入力する際にカーソルが入力欄に入っている状態のこと*/
+  textarea:focus{
+    border-color: blue;
+    outline: 0;/*ここを0にすることで元々ブラウザの使っていた線を無効にしている。これをやらないと色が全然わからない。*/
+  }
+  
+  input[type="search"]::placeholder{/*入力し始めると「名前を入力してください」が消える*/
+    transition: 300ms;
+  }
+  input[type="search"]:focus::placeholder{  
+    transform: translateX(30px);
+    opacity: 0;
   }
