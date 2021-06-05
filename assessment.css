@@ -15,6 +15,7 @@ button{
     border-style: none;
     border-radius: 20px;
     color: white;
+    cursor: pointer;/*マウスのカーソルの形が変わる*/
 }
 input{
     height: 24px;
