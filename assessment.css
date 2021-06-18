@@ -16,7 +16,13 @@ button{
     border-radius: 20px;
     color: white;
     cursor: pointer;/*ボタンの上にマウスが乗るとマウスのカーソルの形が変わる*/
+    transition: 700ms;
 }
+
+button:hover {
+  background: #0d66b4;
+}
+
 input{
     height: 24px;
 }
